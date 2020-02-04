@@ -12,9 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+//        print(2.square())
     }
-
-
 }
 
+extension Int {
+    func square() -> Int {
+        return self * self * self
+    }
+}

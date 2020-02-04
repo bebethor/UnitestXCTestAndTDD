@@ -10,25 +10,16 @@ import XCTest
 @testable import UnitTestExample
 
 class UnitTestExampleTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testSquareInt() {
+        let value = 3
+        let squaredValue = value.square()
+        XCTAssertEqual(squaredValue, 9)
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testHelloWorld() {
+        var helloWorld: String?
+        XCTAssertNil(helloWorld)
+        helloWorld = "Hello World"
+        XCTAssertEqual(helloWorld, "Hello World")
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }
