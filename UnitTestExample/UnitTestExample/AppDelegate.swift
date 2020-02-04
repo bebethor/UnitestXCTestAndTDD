@@ -8,6 +8,13 @@
 
 import UIKit
 
+
+#if XCTEST
+// Test only code version code
+#else
+// App only code
+#endif
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
